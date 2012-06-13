@@ -4,9 +4,31 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <TextView
+    <EditText
+        android:id="@+id/objectiveFunctionField"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:ems="10"
+        android:hint="Functia obiectiv"
+        android:textColor="#000000" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/restrictionsField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Restrictiile"
+        android:textColor="#000000" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSolve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Rezolva" />
 
 </LinearLayout>
