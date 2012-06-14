@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simplex Solver</string>
+    <string name="objective_function">Fonction Objective</string>
+    <string name="restrictions">Restrictions</string>
+    <string name="solve">Résoudre</string>
+    <string name="clear">Effacer</string>
+
+</resources>
