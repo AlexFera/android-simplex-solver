@@ -27,8 +27,8 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="horizontal" 
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal" >
 
         <Button
             android:id="@+id/btnSolve"
@@ -36,6 +36,11 @@
             android:layout_height="wrap_content"
             android:text="@string/solve" />
 
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear" />
     </LinearLayout>
 
 </LinearLayout>
