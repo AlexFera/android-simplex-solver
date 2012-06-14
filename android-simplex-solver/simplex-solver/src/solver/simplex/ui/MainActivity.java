@@ -21,6 +21,7 @@ public class MainActivity extends Activity
 	private EditText restrictionsField;
 	private String result;
 	private Button btnSolve;
+	private Button btnClear;
 
 	private String objectiveFunction;
 	private String restrictions;
@@ -37,6 +38,7 @@ public class MainActivity extends Activity
 		objectiveFunctionField = (EditText) findViewById(R.id.objectiveFunctionField);
 		restrictionsField = (EditText) findViewById(R.id.restrictionsField);
 		btnSolve = (Button) findViewById(R.id.btnSolve);
+		btnClear = (Button) findViewById(R.id.btnClear);
 
 		// Handle callbacks.
 		btnSolve.setOnClickListener(new View.OnClickListener()
@@ -45,6 +47,15 @@ public class MainActivity extends Activity
 			public void onClick(View v)
 			{
 				handleSolve();
+			}
+		});
+
+		btnClear.setOnClickListener(new View.OnClickListener()
+		{
+
+			public void onClick(View v)
+			{
+				clear();
 			}
 		});
 
@@ -132,6 +143,13 @@ public class MainActivity extends Activity
 		Intent resultIntent = new Intent("solver.simplex.SOLVEACTIVITY");
 		resultIntent.putExtra("theResult", result);
 		startActivity(resultIntent);
+	}
+
+	// Clear all the data from the UI.
+	private void clear()
+	{
+		objectiveFunctionField.setText("");
+		restrictionsField.setText("");
 	}
 
 }
