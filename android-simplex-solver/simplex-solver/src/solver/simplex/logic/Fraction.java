@@ -216,12 +216,14 @@ public final class Fraction implements Comparable<Fraction>
 	{
 		amplify(fraction.getDenominator());
 		fraction.amplify(getDenominator());
-		// TODO: the static method Integer.compare
-		// int result = Integer.compare(getNumerator(),
-		// fraction.getNumerator());
+		int result = compare(getNumerator(), fraction.getNumerator());
 		simplify();
 		fraction.simplify();
-		// return result;
-		return -1;
+		return result;
+	}
+	
+	private int compare(int lhs, int rhs)
+	{
+		return lhs < rhs ? -1 : (lhs == rhs ? 0 : 1);
 	}
 }
