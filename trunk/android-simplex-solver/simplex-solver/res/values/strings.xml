@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, MainActivity!</string>
     <string name="app_name">Simplex Solver</string>
+    <string name="objective_function">Funcţia obiectiv</string>
+    <string name="restrictions">Restricţiile</string>
+    <string name="solve">Rezolvă</string>
+    <string name="clear">Goleşte</string>
 
 </resources>
