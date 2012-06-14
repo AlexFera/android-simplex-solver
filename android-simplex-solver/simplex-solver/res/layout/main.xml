@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Functia obiectiv"
+        android:hint="Funcţia obiectiv"
         android:textColor="#000000" >
 
         <requestFocus />
@@ -20,7 +20,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Restrictiile"
+        android:hint="Restricţiile"
         android:textColor="#000000" >
     </EditText>
 
@@ -29,6 +29,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Rezolva" />
+        android:text="Rezolvă" />
 
 </LinearLayout>
